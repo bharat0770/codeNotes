@@ -1,3 +1,10 @@
 ** all concepts and key words you should know 
 
 linent arity 
+{'+49' : "geernabrt"}; non  int prop insertion order
+event phases propagation
+engine
+priority and execution order
+[] vs  . 
+stopPropagation 
+funcation type 
