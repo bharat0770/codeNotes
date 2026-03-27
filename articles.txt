@@ -1,0 +1,11 @@
+** imp js concepts 
+
+https://medium.com/@s.atmaramani/100-javascript-terminologies-4c639730b841
+
+https://opensource.com/article/22/9/javascript-glossary
+
+https://www.webdew.com/blog/latest-web-development-technologies
+
+
+** gfg sorting algo 
+https://www.geeksforgeeks.org/javascript/sorting-algorithms-in-javascript/
