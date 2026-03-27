@@ -9,3 +9,6 @@ https://www.webdew.com/blog/latest-web-development-technologies
 
 ** gfg sorting algo 
 https://www.geeksforgeeks.org/javascript/sorting-algorithms-in-javascript/
+
+** mern + ai proj repo
+https://github.com/topics/ai-project?l=javascript&o=desc&s=stars
