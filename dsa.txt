@@ -1,6 +1,6 @@
 strategy 
 *learn flowchart and pattern with timecomplexity 
 *review blind75 and chatgpt sheet
-*master basic questions first (palindrome, two pointers, bs, window, sorting(quick, bubble, insertion, pivot, etc)); 
+*master basic questions first (palindrome, two pointers, bs, window, sorting(selection,quick, bubble, insertion, pivot, etc)); 
 
 
