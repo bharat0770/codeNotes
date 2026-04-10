@@ -8,3 +8,5 @@ priority and execution order
 [] vs  . 
 stopPropagation 
 funcation type 
+
+lexical scope, closure, hoisting 
