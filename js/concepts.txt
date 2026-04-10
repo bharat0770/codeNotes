@@ -12,3 +12,4 @@ funcation type
 lexical scope, closure, hoisting 
 how code is executed in js
 type pf context 
+call stack 
