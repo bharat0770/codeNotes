@@ -4,3 +4,121 @@ strategy
 *master basic questions first (palindrome, two pointers, bs, window, sorting(selection,quick, bubble, insertion, pivot, etc)); 
 
 
+
+
+sorting algorithms to review daily
+🔥 1. Sorting Algorithms (MOST ASKED)
+1. Bubble Sort
+
+Idea: Swap adjacent if wrong
+Time: O(n²)
+
+Code (JS):
+
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+      }
+    }
+  }
+  return arr;
+}
+
+Memory Trick 🧠:
+👉 “Big bubbles go UP slowly”
+
+2. Selection Sort
+
+Idea: Pick minimum, put at front
+Time: O(n²)
+
+function selectionSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let min = i;
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[min]) min = j;
+    }
+    [arr[i], arr[min]] = [arr[min], arr[i]];
+  }
+  return arr;
+}
+
+Memory Trick 🧠:
+👉 “Select BEST and place”
+
+3. Insertion Sort
+
+Idea: Insert element into sorted part
+Time: O(n²), best O(n)
+
+function insertionSort(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    let key = arr[i], j = i - 1;
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    arr[j + 1] = key;
+  }
+  return arr;
+}
+
+Memory Trick 🧠:
+👉 “Like sorting cards in hand”
+
+4. Merge Sort (VERY IMPORTANT)
+
+Idea: Divide & merge
+Time: O(n log n)
+
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr;
+
+  let mid = Math.floor(arr.length / 2);
+  let left = mergeSort(arr.slice(0, mid));
+  let right = mergeSort(arr.slice(mid));
+
+  return merge(left, right);
+}
+
+function merge(left, right) {
+  let res = [], i = 0, j = 0;
+  while (i < left.length && j < right.length) {
+    res.push(left[i] < right[j] ? left[i++] : right[j++]);
+  }
+  return [...res, ...left.slice(i), ...right.slice(j)];
+}
+
+Memory Trick 🧠:
+👉 “Divide → Solve → Merge”
+
+5. Quick Sort (INTERVIEW FAVORITE)
+
+Idea: Pivot + partition
+Time: Avg O(n log n)
+
+function quickSort(arr) {
+  if (arr.length <= 1) return arr;
+
+  let pivot = arr[arr.length - 1];
+  let left = [], right = [];
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    arr[i] < pivot ? left.push(arr[i]) : right.push(arr[i]);
+  }
+
+  return [...quickSort(left), pivot, ...quickSort(right)];
+}
+
+Memory Trick 🧠:
+👉 “Choose king (pivot), split kingdom”
+
+6. Heap Sort (Less frequent but powerful)
+
+Idea: Use heap (priority queue)
+Time: O(n log n)
+
+Memory Trick 🧠:
+👉 “Always pick MAX/MIN efficiently”
